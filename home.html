@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSA Aviation Student Organisation</title>
+    <link rel="icon" href="pictures/aso_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topSection"> 
+        <img class="asoLogo" src="pictures/aso_logo.png" alt="ASO LOGO">
+        <div class="navButtonContainer">
+        <span class="navButton" onclick="redirectToPage('page2')"> HOME</span>
+        <span class="navButton" onclick="redirectToPage('page1')">ABOUT US </span>
+        <span class="navButton" onclick="redirectToPage('page3')"> COMING EVENTS</span>
+        <span class="navButton" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
+        <span class="navButton" >RESOURCES </span>
+        <span class="navButton" >CONTACT US</span>
+        </div>
+    </div>
+    <div class="homeMedContainer">
+       
+        <div class="eventContainer">
+            <h1 class="ASOevents">ASO Events</h1>
+            <h3 class="homeEvents" onclick="showEvent1()"></span><span class="eventText">> Sip and Soar Soiree </span></h3>
+            <h3 class="homeEvents" onclick="showEvent2()"><span class="eventText">> ASO Bake Sale</span> </h3>
+            <h3 class="homeEvents" onclick="showEvent3()"><span class="eventText">> The ASO in Collaboration With Nutte Present BUBBLE TEA & BOARD GAMES</span> </h3>
+            <h3 class="homeEvents" onclick="showEvent4()"> <span class="eventText">> CSYA Guided Study Session</span> </h3>
+            <h3 class="homeEvents" onclick="showEvent5()"> <span class="eventText">> Key Business and Related Considerations in Aviation</span> </h3>
+            <h3 class="homeEvents" onclick="showEvent6()"><span class="eventText"> > Damage by Aircraft - Some Practical Considerations</span></h3>
+        </div>
+        <div class="announcement">
+            <h1 class="ASOevents">Announcement</h1>
+            <h4 class="announcementText">Dear UniSA Aviation Students,
+
+                Get ready for an exciting event brought to you by the UniSA Aviation Student Organisation (ASO)! We are thrilled to announce the upcoming event that promises a blend of education, networking, and fun.</h4>
+        </div>
+        <div class="image-slider">
+            <img class="titlePicture" src="pictures/titlePic1.jpg" alt="Pictures">
+        </div>
+        
+        
+    </div>
+    <div class="homeMeddownContainer">
+        <div class="introduceContainer"> <img class="introPic"src="pictures/introduce1.png"  onclick="redirectToPage('whatsaso')"><div class="imageText">What's ASO?</div></div>
+        <div class="introduceContainer"> <img class="introPic"src="pictures/introduce2.png" onclick="redirectToPage('page1')"><div class="imageText">Why ASO?</div></div>
+        <div class="introduceContainer"> <img class="introPic"src="pictures/introduce3.png" onclick="openjoin()"><div class="imageText">JOIN ASO NOW!</div></div>
+    </div>
+
+    <div id="contactSection" class="mainsocialmedia" style="background-image: url('pictures/mainbackground.jpg');">
+        <h2 class="followUsText">Follow Our Social Media</h2>
+        <div class="element-driver">
+        <span class="element-separator"></span>
+        </div>
+        <div class="mainsocialiconContainer">
+            <img class="socialIconPic" src="pictures/facebook.jpg">
+            <img class="socialIconPic" src="pictures/ins.png">
+            <img class="socialIconPic" src="pictures/linkedin.png">
+            
+        </div>
+        <div class="mainsocialiconContainer">
+            <img class="socialIconPic" src="pictures/discord.png">
+            <img class="socialIconPic" src="pictures/youtube.png">
+            <img class="socialIconPic" src="pictures/email.png">
+        </div>
+        
+    </div>
+    <div class="homePhotoContainer">
+        <img class="homePhoto" src="pictures/homephoto1.png">
+        <img class="homePhoto" src="pictures/homephoto2.png">
+        <img class="homePhoto" src="pictures/homephoto3.png">
+    </div>
+    <div class="homePhotoContainer">
+        <img class="homePhoto" src="pictures/homephoto4.png">
+        <img class="homePhoto" src="pictures/homephoto5.png">
+        <img class="homePhoto" src="pictures/homephoto6.png">
+    </div>
+   <div class="homeBottom">
+          <div class="homelink">
+               <div class='bottomLinkContainer'>
+                    <span class="navButtonBottom" onclick="redirectToPage('page2')"> HOME</span>
+                    <span class="navButtonBottom" onclick="redirectToPage('page1')">ABOUT US </span>
+                    <span class="navButtonBottom"> COMING EVENTS</span>
+               </div>
+               <div class='bottomLinkContainer'>
+                    <span class="navButtonBottom"> MEMBERSHIP</span>
+                    <span class="navButtonBottom">RESOURCES </span>
+                    <span class="navButtonBottom" >CONTACT US</span>
+               </div>
+          </div>
+          <img class="asoBottom"src="pictures/aso_logo.png">
+          <div class="devlopTextContainer">
+          <h4 class="devlopText">Design & Developed by Joe</h4></div>
+    </div> 
+
+
+
+    
+    <div class="modal" id="Event1">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent1()">&times;</span>
+        <img class="eventpicture"src="pictures/event1.png">
+        </div>
+    </div>
+    <div class="modal" id="Event2">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent2()">&times;</span>
+        <img class="eventpicture"src="pictures/event2.png">
+        </div>
+    </div>
+    <div class="modal" id="Event3">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent3()">&times;</span>
+        <img class="eventpicture"src="pictures/event3.png">
+        </div>
+    </div>
+    <div class="modal" id="Event4">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent4()">&times;</span>
+        <img class="eventpicture"src="pictures/event4.png">
+        </div>
+    </div>
+    <div class="modal" id="Event5">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent5()">&times;</span>
+        <img class="eventpicture"src="pictures/event5.png">
+        </div>
+    </div>
+    <div class="modal" id="Event6">
+        <div class="modal-content">
+        <span class="close" onclick="closeEvent6()">&times;</span>
+        <img class="eventpicture"src="pictures/event6.png">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
