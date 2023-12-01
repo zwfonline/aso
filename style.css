@@ -1,5 +1,5 @@
 
-@media(min-width:600px){
+@media(min-width:1080px){
 
 
 html, body {
@@ -17,7 +17,8 @@ html, body {
 }
 
 .asoLogo{
-    height: 100%;
+    height: 90%;
+    height: 90%;
     margin-left: 13%;
     background-color: white;
     border-radius: 100px;
@@ -60,6 +61,7 @@ html, body {
 .aboutpic{
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .about-us{
@@ -234,7 +236,7 @@ html, body {
 }
 .Register{
     display: inline-block;
-    padding: 15px 25px;
+    padding: 5px 20px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -244,6 +246,7 @@ html, body {
     border-radius: 25px;
     transition: background-color 0.3s;
     cursor: pointer;
+    margin-top: 1%;
 }
 .EventContainer{
     width: 100%;
@@ -269,10 +272,21 @@ html, body {
 }
 
 
+.membershipContainer{
+    justify-content: center;
+}
+.QR-code{
+    width: 25%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 5%;
+    cursor: pointer;
+}
 
 .ASOevents{
     text-align: center;
     color: #212529;
+    margin-bottom: 4%;
 }
 .eventPicture{
     width: 20%;
@@ -288,16 +302,25 @@ html, body {
     width: 30%;
     height: 100%;
     border: 1px solid #e4e1e1;
+    justify-content: center;
+    align-items: center;
 }
 
 .announcementText{
-    font-size: 18px;
+    font-size: 15px;
     color: #13578B;
     font-family: Arial;
-    margin-top: 10%;
     line-height: 2;
     text-align: justify;
-    padding: 25px;
+    margin-left: 3%;
+    margin-bottom: 0px;
+}
+
+.NOTAM{
+    width: 90%;
+    height: auoto;
+    margin-left: 5%;
+    margin-top: 1%;
 }
 
 .eventPicture.visible {
@@ -408,5 +431,974 @@ html, body {
     font-size: 18px;
     font-weight: bold;
 }
+.resourcesContainer {
+    position: relative;
+    display: inline-block;
 }
 
+.resourcesMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 85%;
+}
+
+.resourcesContainer:hover .resourcesMenu {
+    display: block;
+}
+
+.menuItem {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+}
+
+
+
+@media (min-width: 660px) and (max-width: 1080px){
+
+
+    html, body {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+    
+    .topSection{
+        display: flex;
+        align-items: center;
+        background-color:#13578B;
+        height: 14%;
+        width: 100%;
+    }
+    
+    .asoLogo{
+        height: 90%;
+        height: 90%;
+        margin-left: 13%;
+        background-color: white;
+        border-radius: 100px;
+    }
+    
+    .navButton{
+        background-color: none;
+        border: none;
+        font-size: 12px;
+        margin: 0 13px;
+        color: dark;
+        cursor: pointer;
+        text-decoration: none; 
+        position: relative;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .navButton:hover::after {
+        content: ""; 
+        position: absolute; 
+        bottom: -15px; 
+        left: 0; 
+        width: 100%; 
+        height: 3px; 
+        background-color: #fef9f9; 
+    }
+    
+    .navButton:hover {
+        font-size: 14px; /* Set the desired font size when hovering */
+    }
+    
+    
+    .navButtonContainer{
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+    }
+    
+    .aboutpic{
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+    
+    .about-us{
+        position: absolute;
+        top: 60%;
+        width: 60%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .mainsocialmedia{
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    .followUsText{
+        color: #143251;
+        font-family: "Lato", Sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 5%;
+    }
+    .aboutin{
+        text-align: left;
+        margin-bottom: 4%;
+        font-size: 12px;
+    }
+    
+    .Aboutus-Container {
+        position: relative;
+        text-align: center;
+    }
+    
+    .aboutush4::before {
+        content: '\2022'; 
+        margin-right: 8px; 
+    }
+    
+    .aboutush4 , .aboutush2{
+        text-align: left;
+        margin-bottom: 2%;
+        line-height: 2; 
+        font-size: 14px;
+    
+    }
+    .image-slider {
+        width: 40%;
+        height: 100%; /* Set the height to 100% to match the parent container */
+        flex: 1;
+    
+    }
+    .element-driver{
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+    }
+    .element-separator{
+        width: 15%;
+        margin: 0 auto;
+        background-color:   #143251;
+        display: flex;
+        height: 6px;
+    }
+    .mainsocialiconContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .socialIconPic{
+        width: 5%;
+        height: 5%;
+        background-color: none;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        margin: 2%;
+    
+    }
+    
+    .homePhoto{
+        width: 31%;
+        height: 70%;
+        margin-right: 2%;
+    }
+    .homePhotoContainer{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: center;
+    }
+    
+    .homelink{
+        left: 20%;
+        width: 40%;
+        background-color: #888;
+    }
+    .devlopText{
+        height: 5px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    
+    }
+    .devlopTextContainer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .asoBottom{
+        width: 4%;
+        height: 80%;
+        margin-left: 30%;
+    }
+    
+    
+    .homeBottom{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        bottom: 0;
+        margin-top: 5%;
+        background-color: #888;
+        position: relative;
+    }
+    
+    .navButtonBottom{
+        cursor: pointer;
+        color: white;
+        font-size: 10px;
+        margin: 2%;
+    }
+    .homeEvents{
+        margin-left: 5%;
+        margin-bottom: 4%;
+        text-decoration: underline;
+    }
+    .comingEventsContainer{
+        width: 50%;
+        margin-left: 25%;
+        height: 150%;
+    }
+    .eventTime{
+        display: flex;
+        height: 15%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1%;
+        
+    }
+    .eventTimeText{
+        text-align: center;
+        font-size: 16px;
+    }
+    .whenIcon{
+        width: 3%;
+        height: 90%;
+        margin-right: 1%;
+    }
+    .upcomingEventContainer{
+        width: 100%;
+        height: 16%;
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+        background-color: rgb(59, 238, 59);
+        border-radius: 40px;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .Register{
+        display: inline-block;
+        padding: 5px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: red;
+        color: #fff;
+        border-radius: 25px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+        margin-top: 1%;
+    }
+    .EventContainer{
+        width: 100%;
+        height: 16%;
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+        background-color: rgb(116, 122, 116);
+        border-radius: 40px;
+        text-align: center;
+        margin-top: 2%;
+        justify-content: center;
+    }
+    
+    .eventTitle{
+        font-size: 20px;
+    }
+    .eventText {
+        cursor: pointer;
+        color: #13578B;
+        font-family: Arial;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+    
+    
+    .membershipContainer{
+        justify-content: center;
+    }
+    .QR-code{
+        width: 25%;
+        height: auto;
+        margin-left: 35%;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+    
+    .ASOevents{
+        text-align: center;
+        color: #212529;
+        margin-bottom: 4%;
+    }
+    .eventPicture{
+        width: 20%;
+        height: auto;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .titlePicture{
+        width:100%;
+        height: auto;
+        margin-top: 25%;
+    }
+    .announcement{
+        width: 30%;
+        height: 100%;
+        border: 1px solid #e4e1e1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .announcementText{
+        font-size: 15px;
+        color: #13578B;
+        font-family: Arial;
+        line-height: 2;
+        text-align: justify;
+        margin-left: 3%;
+        margin-bottom: 0px;
+    }
+    
+    .NOTAM{
+        width: 90%;
+        height: auoto;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    
+    .eventPicture.visible {
+        opacity: 1;
+    }
+    
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .bottomLinkContainer{
+        margin-left: 40%;
+        display: flex;
+        width: 60%;
+        height: 50%;
+    
+        justify-content: center;
+        align-items: center;
+    }
+    .homeMedContainer{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        margin-top: 2%;
+    }
+    
+    .eventContainer{
+            width: 40%;
+            height: 100%; /* Set the height to 100% to match the parent container */
+            flex: 1;
+            border: 1px solid #e4e1e1;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 23%;
+        top: 12%;
+        width: 50%;
+        height: 80%;
+        overflow: auto;
+        background-color: none;;
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        text-align: center; /* 居中文本内容 */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .close {
+        color: black;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .eventpicture{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .homeMeddownContainer{
+        width: 100%;
+        height: 32%;
+        margin-top: 10%;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .introduceContainer{
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 15%;
+        height: 100%;
+        position: relative;
+    }
+    .introPic{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .imageText {
+        position: absolute;
+        bottom: 10px; /* Adjust the distance from the bottom */
+        left: 10px; /* Adjust the distance from the left */
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .resourcesContainer {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .resourcesMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 85%;
+    }
+    
+    .resourcesContainer:hover .resourcesMenu {
+        display: block;
+    }
+    
+    .menuItem {
+        cursor: pointer;
+        padding: 5px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        border-bottom: 1px solid #ddd;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    }
+    
+@media (min-width: 0px) and (max-width: 659px){
+
+
+        html, body {
+                height: 100%;
+                margin: 0;
+                width: 100%;
+            }
+        
+        .topSection{
+            display: flex;
+            align-items: center;
+            background-color:#13578B;
+            height: 14%;
+            width: 100%;
+        }
+        
+        .asoLogo{
+            height: 50%;
+            margin-left: 3%;
+            background-color: white;
+            border-radius: 100px;
+        }
+        
+        .navButton{
+            background-color: none;
+            border: none;
+            font-size: 12px;
+            margin-right: 10px;
+            color: dark;
+            cursor: pointer;
+            text-decoration: none; 
+            position: relative;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .navButton:hover::after {
+            content: ""; 
+            position: absolute; 
+            bottom: -15px; 
+            left: 0; 
+            width: 100%; 
+            height: 3px; 
+            background-color: #fef9f9; 
+        }
+        
+        .navButton:hover {
+            font-size: 14px; /* Set the desired font size when hovering */
+        }
+        
+        #resourcesBtn, #conactusBtn{
+            display: none;
+        }
+
+        .navButtonContainer{
+            display: flex;
+            align-items: center;
+            margin-left: 3%;
+        }
+        
+        .aboutpic{
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+        
+        
+        .about-us{
+            position: absolute;
+            top: 60%;
+            height: auto;
+            width: 75%;
+            margin-left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 30px;
+        }
+        
+        .mainsocialmedia{
+            width: 100%;
+            margin-top: 5%;
+        }
+        
+        .followUsText{
+            color: #143251;
+            font-family: "Lato", Sans-serif;
+            font-style: italic;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5%;
+
+        }
+        .aboutin{
+            text-align: left;
+            margin-bottom: 4%;
+            font-size: 12px;
+        }
+        
+        .Aboutus-Container {
+            position: relative;
+            text-align: center;
+            height: auto;
+            top:15%
+        }
+        
+        .aboutush4::before {
+            content: '\2022'; 
+            margin-right: 8px; 
+        }
+        
+        .aboutush4 , .aboutush2{
+            text-align: left;
+            margin-bottom: 2%;
+            line-height: 2; 
+            font-size: 12px;
+        
+        }
+        .image-slider {
+           display: none;
+        
+        }
+        .element-driver{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+        }
+        .element-separator{
+            width: 15%;
+            margin: 0 auto;
+            background-color:   #143251;
+            display: flex;
+            height: 6px;
+        }
+        .mainsocialiconContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .socialIconPic{
+            width: 15%;
+            height: 15%;
+            background-color: none;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            margin: 2%;
+        
+        }
+        
+        .homePhoto{
+            width: 31%;
+            height: 100%;
+            margin-right: 2%;
+        }
+        .homePhotoContainer{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            margin-top: 15%;
+            justify-content: center;
+        }
+        
+        .homelink{
+            left: 20%;
+            width: 40%;
+            background-color: #888;
+        }
+        .devlopText{
+            height: 5px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        
+        }
+        .devlopTextContainer{
+            display: none;
+        }
+        .asoBottom{
+            width:20%;
+            height: auto;
+            margin-left: 30%;
+        }
+        
+        
+        .homeBottom{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            bottom: -40%;
+            background-color: #888;
+            position: relative;
+        }
+        
+        .navButtonBottom{
+            cursor: pointer;
+            color: white;
+            font-size: 10px;
+            margin: 2%;
+        }
+        .homeEvents{
+            margin-left: 5%;
+            margin-bottom: 4%;
+            text-decoration: underline;
+        }
+        .comingEventsContainer{
+            width: 50%;
+            margin-left: 25%;
+            height: 100%;
+        }
+        .eventTime{
+            display: flex;
+            height: 15%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12%;
+            
+        }
+        .eventTimeText{
+            text-align: center;
+            font-size: 12px;
+        }
+        .whenIcon{
+            width: 14%;
+            height: 90%;
+            margin-right: 1%;
+        }
+        .upcomingEventContainer{
+            width: 100%;
+            height: 25%;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            background-color: rgb(59, 238, 59);
+            border-radius: 40px;
+            text-align: center;
+            margin-top: 12%;
+        }
+        .Register{
+            display: inline-block;
+            padding: 5px 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: red;
+            color: #fff;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            margin-top: 1%;
+        }
+        .EventContainer{
+            width: 100%;
+            height: 19%;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            background-color: rgb(116, 122, 116);
+            border-radius: 40px;
+            text-align: center;
+            margin-top: 10%;
+            justify-content: center;
+        }
+        
+        .eventTitle{
+            font-size: 14px;
+            margin-bottom: 9%;
+        }
+        .eventText {
+            cursor: pointer;
+            color: #13578B;
+            font-family: Arial;
+            text-decoration: underline;
+            font-size: 12px;
+        }
+        
+        
+        .membershipContainer{
+            justify-content: center;
+        }
+        .QR-code{
+            width: 75%;
+            height: auto;
+            margin-left: 13%;
+            margin-top: 35%;
+            cursor: pointer;
+        }
+        
+        .ASOevents{
+            text-align: center;
+            color: #212529;
+            margin-bottom: 4%;
+        }
+        .eventPicture{
+            width: 20%;
+            height: auto;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .titlePicture{
+            display: none;
+        }
+        .announcement{
+            display: none;
+        }
+        
+        .announcementText{
+            font-size: 15px;
+            color: #13578B;
+            font-family: Arial;
+            line-height: 2;
+            text-align: justify;
+            margin-left: 3%;
+            margin-bottom: 0px;
+        }
+        
+        .NOTAM{
+            width: 90%;
+            height: auoto;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+        
+        .eventPicture.visible {
+            opacity: 1;
+        }
+        
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .bottomLinkContainer{
+            margin-left: 4%;
+            display: flex;
+            width: 100%;
+            height: 50%;
+            align-items: center;
+        }
+        .homeMedContainer{
+            width: 100%;
+            height: 55%;
+            display: flex;
+            margin-top: 2%;
+        }
+        
+        .eventContainer{
+                width: 100%;
+                height: 100%; /* Set the height to 100% to match the parent container */
+                flex: 1;
+                border: 1px solid #e4e1e1;
+                margin-top: 3%;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 23%;
+            top: 12%;
+            width: 50%;
+            height: 80%;
+            overflow: auto;
+            background-color: none;;
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            text-align: center; /* 居中文本内容 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .close {
+            color: black;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .eventpicture{
+            width: 90%;
+            height: 90%;
+        }
+        
+        .homeMeddownContainer{
+            width: 100%;
+            height: auto;
+            margin-top: 5%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+        
+        .introduceContainer{
+            margin-left: 3%;
+            margin-right: 3%;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-bottom: 5%;
+        }
+        .introPic{
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            margin-right: 40%;
+        }
+        
+        .imageText {
+            position: absolute;
+            bottom: 10px; /* Adjust the distance from the bottom */
+            left: 10px; /* Adjust the distance from the left */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .resourcesContainer {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .resourcesMenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 85%;
+        }
+        
+        .resourcesContainer:hover .resourcesMenu {
+            display: block;
+        }
+        
+        .menuItem {
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        }

@@ -10,17 +10,36 @@
 </head>
 
 <body>
-    <div class="topSection"> 
-        <img class="asoLogo" src="pictures/aso_logo.png" alt="ASO LOGO">
-        <div class="navButtonContainer">
-        <span class="navButton" onclick="redirectToPage('page2')"> HOME</span>
-        <span class="navButton" onclick="redirectToPage('page1')">ABOUT US </span>
-        <span class="navButton" onclick="redirectToPage('page3')"> COMING EVENTS</span>
-        <span class="navButton" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
-        <span class="navButton">RESOURCES </span>
-        <span class="navButton">CONTACT US</span>
-        </div>
-    </div>
+     <div class="topSection"> 
+          <img class="asoLogo" src="pictures/aso_logo.png" alt="ASO LOGO">
+          <div class="navButtonContainer">
+          <span class="navButton" onclick="redirectToPage('page2')"> HOME</span>
+          <span class="navButton" onclick="redirectToPage('page1')">ABOUT US </span>
+          <span class="navButton" onclick="redirectToPage('page3')"> COMING EVENTS</span>
+          <span class="navButton" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
+          <div class="resourcesContainer">
+              <span class="navButton" id="resourcesBtn">RESOURCES </span>     
+                  <div class="resourcesMenu" id="resourcesMenu">
+                      <div class="menuItem" onclick="resource1()">Weather</div>
+                      <div class="menuItem" onclick="resource2()">Airservices</div>
+                      <div class="menuItem" onclick="resource4()">FR24</div>
+                      <div class="menuItem" onclick="resource5()">LiveATC</div>
+                      <div class="menuItem" onclick="resource3()">VATSIM</div>
+                  </div>
+          </div>
+          <div class="resourcesContainer"> 
+              <span class="navButton"  >CONTACT US</span>
+              <div class="resourcesMenu" id="resourcesMenu">
+                  <div class="menuItem" onclick="contactus1()">Facebook</div>
+                  <div class="menuItem" onclick="contactus2()">Instagram</div>
+                  <div class="menuItem" onclick="contactus3()">LinkIn</div>
+                  <div class="menuItem" onclick="contactus4()">Discord</div>
+                  <div class="menuItem" onclick="contactus5()">YouTube</div>
+                  <div class="menuItem" onclick="contactus6()">Twitch</div>
+              </div>
+          </div> 
+          </div>
+      </div>
     
     <div class="comingEventsContainer">
           <div class="upcomingEventContainer">
@@ -31,7 +50,7 @@
                </div>
                <div class="eventTime">
                     <img src="pictures/where.png" class="whenIcon">
-                         <h3> Bowden Brewing</h3>
+                         <h3 class="eventTimeText"> Bowden Brewing</h3>
                </div>
                <span class="Register" onclick="openupcomingEvent()"> Register here!</span>
           </div>
@@ -83,22 +102,21 @@
     </div>
     
     <div class="homeBottom">
-        <div class="homelink">
-             <div class='bottomLinkContainer'>
-                  <span class="navButtonBottom" onclick="redirectToPage('page2')"> HOME</span>
-                  <span class="navButtonBottom" onclick="redirectToPage('page1')">ABOUT US </span>
-                  <span class="navButtonBottom"> COMING EVENTS</span>
-             </div>
-             <div class='bottomLinkContainer'>
-                  <span class="navButtonBottom"> MEMBERSHIP</span>
-                  <span class="navButtonBottom">RESOURCES </span>
-                  <span class="navButtonBottom" >CONTACT US</span>
-             </div>
-        </div>
-        <img class="asoBottom"src="pictures/aso_logo.png">
-        <div class="devlopTextContainer">
-        <h4 class="devlopText">Design & Developed by Joe</h4></div>
-  </div> 
+     <div class="homelink">
+          <div class='bottomLinkContainer'>
+               <span class="navButtonBottom" onclick="redirectToPage('page2')"> HOME</span>
+               <span class="navButtonBottom" onclick="redirectToPage('page1')">ABOUT US </span>
+               <span class="navButtonBottom" onclick="redirectToPage('page3')"> COMING EVENTS</span>
+          </div>
+          <div class='bottomLinkContainer'>
+               <span class="navButtonBottom" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
+               <span class="navButtonBottom" >CONTACT US</span>
+          </div>
+     </div>
+     <img class="asoBottom"src="pictures/aso_logo.png">
+     <div class="devlopTextContainer">
+     <h4 class="devlopText">Design & Developed by Joe</h4></div>
+</div> 
     
     <script src="script.js"></script>
 </body>

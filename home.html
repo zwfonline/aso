@@ -17,10 +17,30 @@
         <span class="navButton" onclick="redirectToPage('page1')">ABOUT US </span>
         <span class="navButton" onclick="redirectToPage('page3')"> COMING EVENTS</span>
         <span class="navButton" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
-        <span class="navButton" >RESOURCES </span>
-        <span class="navButton" >CONTACT US</span>
+        <div class="resourcesContainer">
+            <span class="navButton" id="resourcesBtn">RESOURCES </span>     
+                <div class="resourcesMenu" id="resourcesMenu">
+                    <div class="menuItem" onclick="resource1()">Weather</div>
+                    <div class="menuItem" onclick="resource2()">Airservices</div>
+                    <div class="menuItem" onclick="resource4()">FR24</div>
+                    <div class="menuItem" onclick="resource5()">LiveATC</div>
+                    <div class="menuItem" onclick="resource3()">VATSIM</div>
+                </div>
+        </div>
+        <div class="resourcesContainer"> 
+            <span class="navButton" id="conactusBtn"  >CONTACT US</span>
+            <div class="resourcesMenu" id="resourcesMenu">
+                <div class="menuItem" onclick="contactus1()">Facebook</div>
+                <div class="menuItem" onclick="contactus2()">Instagram</div>
+                <div class="menuItem" onclick="contactus3()">LinkIn</div>
+                <div class="menuItem" onclick="contactus4()">Discord</div>
+                <div class="menuItem" onclick="contactus5()">YouTube</div>
+                <div class="menuItem" onclick="contactus6()">Twitch</div>
+            </div>
+        </div> 
         </div>
     </div>
+
     <div class="homeMedContainer">
        
         <div class="eventContainer">
@@ -33,10 +53,8 @@
             <h3 class="homeEvents" onclick="showEvent6()"><span class="eventText"> > Damage by Aircraft - Some Practical Considerations</span></h3>
         </div>
         <div class="announcement">
-            <h1 class="ASOevents">Announcement</h1>
-            <h4 class="announcementText">Dear UniSA Aviation Students,
-
-                Get ready for an exciting event brought to you by the UniSA Aviation Student Organisation (ASO)! We are thrilled to announce the upcoming event that promises a blend of education, networking, and fun.</h4>
+            <h1 class="ASOevents">NOTAM</h1>
+            <img class="NOTAM"src="pictures/NOTAM.png">
         </div>
         <div class="image-slider">
             <img class="titlePicture" src="pictures/titlePic1.jpg" alt="Pictures">
@@ -83,11 +101,10 @@
                <div class='bottomLinkContainer'>
                     <span class="navButtonBottom" onclick="redirectToPage('page2')"> HOME</span>
                     <span class="navButtonBottom" onclick="redirectToPage('page1')">ABOUT US </span>
-                    <span class="navButtonBottom"> COMING EVENTS</span>
+                    <span class="navButtonBottom" onclick="redirectToPage('page3')"> COMING EVENTS</span>
                </div>
                <div class='bottomLinkContainer'>
-                    <span class="navButtonBottom"> MEMBERSHIP</span>
-                    <span class="navButtonBottom">RESOURCES </span>
+                    <span class="navButtonBottom" onclick="redirectToPage('page4')"> MEMBERSHIP</span>
                     <span class="navButtonBottom" >CONTACT US</span>
                </div>
           </div>

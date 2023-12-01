@@ -46,14 +46,67 @@ function redirectToPage(page) {
     }
 }
 
+function showResources() {
+    var menu = document.getElementById("resourcesMenu");
+    menu.style.display = "block";
+}
+
+function openPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+
 function openjoin(){
     window.open("https://usasa.sa.edu.au/clubs/join/aviation/")
 }
 
+function resource1(){
+    window.open("http://www.bom.gov.au/aviation/weather-packages/")
+}
+
+function resource2(){
+    window.open("https://www.airservicesaustralia.com/")
+}
+
+function resource3(){
+    window.open("https://vatsim.net/")
+}
+
+function resource4(){
+    window.open("https://www.flightradar24.com/60,15/6")
+}
+
+function resource5(){
+    window.open("https://www.liveatc.net/")
+}
+
 function openupcomingEvent(){
     window.open("https://usasa.sa.edu.au/events/6091/484/")
-
 }
+
+function contactus1(){
+    window.open("https://www.facebook.com/unisaASO/")
+}
+
+function contactus2(){
+    window.open("https://www.instagram.com/aso_unisa/")
+}
+
+function contactus3(){
+    window.open("https://www.linkedin.com/company/usasa/?originalSubdomain=au")
+}
+
+function contactus4(){
+    window.open("https://discord.com/invite/UZqGW4WuME")
+}
+
+function contactus5(){
+    window.open("https://www.youtube.com/channel/UCEiCIYpCllkD7rDrmBTOArA")
+}
+
+function contactus6(){
+    window.open("https://www.twitch.tv/USASAadelaide")
+}
+
 function openModal() {
     // Show the modal
     document.getElementById('myModal').style.display = 'block';
