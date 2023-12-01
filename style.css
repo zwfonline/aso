@@ -1161,8 +1161,8 @@ html, body {
             font-size: 12px;
         }
         .whenIcon{
-            width: 14%;
-            height: 90%;
+            width: 11%;
+            height: auto
             margin-right: 1%;
         }
         .upcomingEventContainer{
@@ -1359,7 +1359,6 @@ html, body {
             width: 100%;
             height: auto;
             cursor: pointer;
-            margin-right: 40%;
         }
         
         .imageText {
